@@ -13,7 +13,7 @@
   left: -9999px;
   opacity: 0;
 }
-/* NAV BAR THUD ANIMation*/
+/* NAV BAR THUD ANIMATION */
 
 nav h1 {
   transform: translateY(-150%) scaleY(1.05);
@@ -111,7 +111,8 @@ nav h1.drop-in {
 
 /* CONTACT SECTION STYLES */
 .contact {
-  padding-bottom: 6rem;
+  margin-top: 10rem;
+  padding-bottom: 0rem;
   margin-bottom: 0px;
 }
 
@@ -136,7 +137,7 @@ address{
     width: 100px;
     height: 100px;
     border: none;
-    margin-right: 1vh;
+    margin-right: 2vh;
     margin-left: 0;
 }
 
@@ -177,7 +178,7 @@ address{
 /* stagger delay on child num */
 .contact.in-view ul a:nth-child(1) .icon-image { animation-delay: 0ms; }
 .contact.in-view ul a:nth-child(2) .icon-image { animation-delay: 120ms; }
-
+.contact.in-view ul a:nth-child(3) .icon-image { animation-delay: 240ms; }
 
 /* TABLE STYLES */
 

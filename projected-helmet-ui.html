@@ -44,7 +44,7 @@
         <h1 class="header-2">Overview</h1>
 
         <p class="content-1">This project was created using the <strong>Unity</strong> game engine. It was primarily written in <strong>HLSL</strong> and <strong>C#</strong>, utilising unitys <strong>URP</strong> and <strong>ShaderLabs</strong> API.<br>
-          The project was primarily research based and I hit many <i>knowledge</i> blocks, most notably: Matrix transformations, Projection math and 
+          The project was primarily research based and I hit many knowledge blocks, most notably: Matrix transformations, Projection math and 
           other cornerstones of computer graphics like vertex and fragment mapping. Albeit, a great learning experience.
         </p>
 
@@ -82,15 +82,14 @@
 
       <!-- Product Section -->
       <section>
-        <h1 class="header-2">Pipeline</h1>
+        <h1 class="header-2">Product</h1>
 
-        <p class="content-1">The most difficult problem in this project  was writing the shader. Here is a short explanation of the general pipeline I designed; the players data is handled using <strong>Scriptable Objects</strong>
-          this is then handed to the <strong>2D Render Texture</strong> which is finally passed into the shader. In another area --- a script sends all the 
+        <p class="content-1">The most difficult problem in this project byfar was writing the shader. Here is an explanation of the general pipeline I designed; the players data is handled using <strong>Scriptable Objects</strong>
+          this is put into the <strong>2D Render Texture</strong> which is then passed into the shader. In another area --- a script sends all the 
           relevant matrices such as the <strong>Model, View and Projection matrices</strong> from the "Projector Camera" game object, into the shader. The shader than samples the 2D render texture 
-          and uses the transformation matrices to take data from the 2D render texture and put it into the target game objects mesh. Its then <i>distorted</i> by a colour and position sin wave animation for aesthetics,
-          while also performing a perspective divide to make sure its not orthographic.<br>
-          The final product is a 2D texture projected onto a concave target mesh.<br>
-          Repo here:
+          and uses the transformation matrices to take data from the 2D render texture and map it onto the target game objects mesh. It is also <i>distorted</i> by a colour and position sin wave animation for aesthetics.<br>
+          The final product is a 2D texture projected onto a concave mesh.<br>
+          For further information, check out the repo here:
           <a href="https://eng-git.canterbury.ac.nz/SoPD/prod-224_22s1/2025/lea46/comp-shader-proj.git">Project Git Repository</a>.
         </p>
 
