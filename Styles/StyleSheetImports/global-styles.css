@@ -1,10 +1,4 @@
-/* CSS IMPORTS FILE FOR GLOBAL STYLES */
-
-/* Import fonts */
-@import url('../../Assets/Fonts/BrandonGrotesque/brandon-grotesque.css'); /* Big ahh header font */
-@import url('../../Assets/Fonts/ClashDisplay_Complete/clash-display.css'); /* my second header font */
-@import url('../../Assets/Fonts/Satoshi/satoshi.css'); /* my body font */
-@import url('../../Assets/Fonts/Space_Grotesk/space-grotesk.css'); /* my interactor font */
+/* CSS IMPORTS FILE FOR GLOBAL STYLES */ /* Import fonts */ @import url('../../Assets/Fonts/BrandonGrotesque/brandon-grotesque.css'); /* Big ahh header font */ @import url('../../Assets/Fonts/ClashDisplay_Complete/clash-display.css'); /* my second header font */ @import url('../../Assets/Fonts/Satoshi/satoshi.css'); /* my body font */ @import url('../../Assets/Fonts/Space_Grotesk/space-grotesk.css'); /* my interactor font */
 
 
 /* Colour Palette (Colours prefixed by H), interfaced by var*/
@@ -184,7 +178,7 @@ nav ul {
   margin-right: 5px;
 }
 
-nav a {
+nav a, button {
   font-family: 'SpaceGrotesk', sans-serif;
   font-size: clamp(1.3rem, 1.8vw, 2rem);
   font-style: normal;
@@ -192,11 +186,41 @@ nav a {
   line-height: 1;
   font-weight: 500;
 
-
   color: var(--HWhite);
   text-decoration: none;
   transition: color 0.3s;
   padding: 0rem 0.5rem;
+}
+
+button {
+    background: none;
+    border: none;
+}
+.drop-down{
+    position: relative;
+}
+
+/* drop down menu styles */
+.drop-down-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    padding: 0.5rem 0;
+    background-color: rgba(15, 15, 15, 0.65);
+}
+
+.drop-down:hover .drop-down-content {
+   display: flex; 
+    
+}
+
+.drop-down-content a {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-align: left;
 }
 
 /* cool neon effect */
@@ -205,6 +229,11 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(191, 13, 34, 0.4);
 }
 
+nav button:hover {
+    cursor: pointer;
+    color: var(--HRed);
+    box-shadow: 0 4px 12px rgba(191, 13, 34, 0.4);
+}
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
 
@@ -300,3 +329,4 @@ h1, h2, .header-1, .header-2, img{
   cursor: default;
   user-select: none;
 }
+
