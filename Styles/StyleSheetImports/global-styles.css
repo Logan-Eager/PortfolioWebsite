@@ -189,7 +189,9 @@ nav a, button {
   color: var(--HWhite);
   text-decoration: none;
   transition: color 0.3s;
-  padding: 0rem 0.5rem;
+  padding: 0rem 0.9rem;
+  
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -199,6 +201,7 @@ button {
 .drop-down{
     position: relative;
 }
+
 
 /* drop down menu styles */
 .drop-down-content {
@@ -237,12 +240,6 @@ nav button:hover {
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
 
-  /* larger nav buttons for interaction */
-  nav a {
-    padding: 0.4rem 0.6rem;
-    border-radius: 8px;
-    font-size: 1.3rem;
-  }
 
   /* stacks header and list and other visual stuff */
   nav {
@@ -255,6 +252,9 @@ nav button:hover {
     gap: 0.2rem;
     margin: 0.5rem 1rem;
     padding: 0;
+  }
+  nav a, button{
+      padding: 0rem 0.2rem;
   }
 
   nav h1{
