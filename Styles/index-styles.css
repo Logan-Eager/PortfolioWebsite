@@ -1,55 +1,23 @@
 /* MAIN PAGE STYLESHEET */
-/* Import Brandon Grotesque font */
-@import url("StyleSheetImports/fontface-styles.css");
 
 /* import global styles */
 @import url("StyleSheetImports/global-styles.css");
 
-
 /* HIDDEN HEADER CLASS FOR SEO */
-
 .hidden {
   position: absolute;
   left: -9999px;
   opacity: 0;
 }
-/* NAV BAR THUD ANIMATION */
 
-nav h1 {
-  transform: translateY(-150%) scaleY(1.05);
-}
-
-nav h1.drop-in {
-  animation: drop-thud 400ms cubic-bezier(1,.1,.1,1) both;
-}
-
-@keyframes drop-thud {
-  0% {
-    transform: translateY(-150%) scaleY(1.05);
-    opacity: 0;
-    box-shadow: 0 0 0 rgba(0,0,0,0);
-  }
-  60% {
-    transform: translateY(12px) scaleY(0.94);
-    opacity: 1;
-    box-shadow: 0 20px 36px rgba(0,0,0,0.22);
-  }
-  85% {
-    transform: translateY(-6px) scaleY(1.03);
-    box-shadow: 0 10px 18px rgba(0,0,0,0.12);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
-  }
-}
 
 /* HERO SECTION STYLES */
 .title-hero {
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   text-align: center;
-  padding: clamp(8rem, 10vh, 15rem) 1rem;
-  margin: 10vh;
+  margin: 0;             
+  padding: clamp(8rem, 15vh, 20rem) 2rem;
+  margin-top: 5rem;
 }
 
 /* ABOUT SECTION STYLES */
@@ -58,6 +26,7 @@ nav h1.drop-in {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .about .header-2{
   margin-bottom: 0;
 }
@@ -76,6 +45,7 @@ nav h1.drop-in {
     height: 300px;
 }
 
+
 /* PROJECTS SECTION STYLES */
 .project-grid {
   display: grid;
@@ -86,7 +56,7 @@ nav h1.drop-in {
 .project-grid a {
   text-decoration: none;
   text-align: center;
-  color: var(--HWhite);
+  color: var(--Hwhite);
 }
 
 .project-card {
@@ -98,13 +68,12 @@ nav h1.drop-in {
   font-style: normal;
 }
 
-/* make project cards show click pointer when hovered */
 .project-card img {
   cursor: pointer;
 }
 
 .project-card:hover {
-  margin-top: -5px;
+  transform: translateY(-10px);
   box-shadow: 0 10px 10px rgba(10, 10, 10, 0.2);
 }
 
@@ -154,33 +123,8 @@ address{
   padding: 0;
 }
 
-/* ICON ANIMATION */
-/* begin with icon low and invisible */
-.contact .icon-image {
-  opacity: 0;
-}
 
-/* bounce keyframes */
-@keyframes bounce-up {
-  0%   { transform: translateY(24px); opacity: 0; }
-  60%  { transform: translateY(-6px); opacity: 0.8; }
-  100% { transform: translateY(0); opacity: 1; }
-}
-
-/* on section gets contact in view, activate animation */
-.contact.in-view .icon-image {
-  animation-name: bounce-up;
-  animation-duration: 1000ms;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(.22,.9,.3,1);
-}
-
-/* stagger delay on child num */
-.contact.in-view ul a:nth-child(1) .icon-image { animation-delay: 0ms; }
-.contact.in-view ul a:nth-child(2) .icon-image { animation-delay: 120ms; }
-.contact.in-view ul a:nth-child(3) .icon-image { animation-delay: 240ms; }
-
-/* TABLE STYLES */
+/* SKILL TABLE STYLES */
 
 table {
   width: 60%;
@@ -212,6 +156,58 @@ td{
   border-right: 2px solid var(--HBlack);
 }
 
+/* NAV BAR THUD ANIMATION */
+
+nav h1 {
+  transform: translatey(-150%) scaley(1.05);
+}
+
+nav h1.drop-in {
+  animation: drop-thud 400ms cubic-bezier(1,.1,.1,1) both;
+}
+
+@keyframes drop-thud {
+  0% {
+    transform: translatey(-150%) scaley(1.05);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  60% {
+    transform: translatey(12px) scaley(0.94);
+    opacity: 1;
+    box-shadow: 0 20px 36px rgba(0,0,0,0.22);
+  }
+  85% {
+    transform: translatey(-6px) scaley(1.03);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+  }
+  100% {
+    transform: translatey(0) scaley(1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
+  }
+}
+
+/* ICON ANIMATION */
+.contact .icon-image {
+  opacity: 0;
+}
+
+@keyframes bounce-up {
+  0%   { transform: translatey(24px); opacity: 0; }
+  60%  { transform: translatey(-6px); opacity: 0.8; }
+  100% { transform: translatey(0); opacity: 1; }
+}
+
+.contact.in-view .icon-image {
+  animation-name: bounce-up;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.22,.9,.3,1);
+}
+
+.contact.in-view ul a:nth-child(1) .icon-image { animation-delay: 0ms; }
+.contact.in-view ul a:nth-child(2) .icon-image { animation-delay: 120ms; }
+.contact.in-view ul a:nth-child(3) .icon-image { animation-delay: 240ms; }
 
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
@@ -247,7 +243,6 @@ td{
     margin: 0;
   }
 
-  /* table responsive styles */
   table {
     width: 100%;
   }
@@ -262,6 +257,5 @@ td{
   }
 
 }
-
 
 

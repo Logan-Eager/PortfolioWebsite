@@ -1,4 +1,10 @@
-/* CSS IMPORTS FILE FOR GLOBAL STYLES */ /* Import fonts */ @import url('../../Assets/Fonts/BrandonGrotesque/brandon-grotesque.css'); /* Big ahh header font */ @import url('../../Assets/Fonts/ClashDisplay_Complete/clash-display.css'); /* my second header font */ @import url('../../Assets/Fonts/Satoshi/satoshi.css'); /* my body font */ @import url('../../Assets/Fonts/Space_Grotesk/space-grotesk.css'); /* my interactor font */
+/* CSS IMPORTS FILE FOR GLOBAL STYLES */ 
+
+/* Import fonts */ 
+/* Big ahh header font */ @import url('../../Assets/Fonts/BrandonGrotesque/brandon-grotesque.css');
+/* my second header font */ @import url('../../Assets/Fonts/ClashDisplay_Complete/clash-display.css'); 
+/* my body font */ @import url('../../Assets/Fonts/Satoshi/satoshi.css');
+/* my interactor font */ @import url('../../Assets/Fonts/Space_Grotesk/space-grotesk.css'); 
 
 
 /* Colour Palette (Colours prefixed by H), interfaced by var*/
@@ -13,7 +19,9 @@
 
 /* PROJECT HERO STYLES */
 .project-hero {
+  /* SOME BRIEF NOTES ON THE HERO SECTION */
   /* I think these vals get overidden on background change but still good for reference */
+  /* Project hero is designed to hide self until video is overlayed */
   height: 60vh;
   min-height: 400px;
   margin: 10vh;
@@ -28,7 +36,6 @@
   overflow: hidden;
 }
 
-/* Project hero is designed to hide self until video is overlayed */
 .project-hero video {
   position: absolute;
   inset: 0;
@@ -160,17 +167,16 @@ nav {
 }
 
 nav h1 {
-  margin: 0;
-  padding: 0;
-}
-
-nav h1.header-2 {
   font-family: 'BrandonGrotesque-Bold', sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 900;
   letter-spacing: 0.1rem;
   padding: 0rem 1rem;
+  margin: 0;
+  padding: 0;
 }
+
+/* TO DO:, make ↓ there instead of the cube icon */
 
 nav ul {
   list-style: none;
@@ -190,20 +196,17 @@ nav a, button {
   text-decoration: none;
   transition: color 0.3s;
   padding: 0rem 0.9rem;
+  background: none;
+  border: none;
   
   -webkit-tap-highlight-color: transparent;
 }
 
-button {
-    background: none;
-    border: none;
-}
+/* drop down menu styles */
 .drop-down{
     position: relative;
 }
 
-
-/* drop down menu styles */
 .drop-down-content {
     display: none;
     flex-direction: column;
@@ -217,16 +220,25 @@ button {
 
 .drop-down:hover .drop-down-content {
    display: flex; 
-    
+}
+
+/* adds divider */
+.drop-down-content li{
+    border-bottom: 1px solid var(--HTeal);
+}
+.drop-down-content li:last-child{
+    border-bottom: none;
 }
 
 .drop-down-content a {
     padding: 0.5rem 1rem;
     margin: 0;
     text-align: left;
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
 }
 
-/* cool neon effect */
+
+/* hover effects for nav links and buttons */
 nav a:hover {
   color: var(--HRed);
   box-shadow: 0 4px 12px rgba(191, 13, 34, 0.4);
@@ -237,6 +249,7 @@ nav button:hover {
     color: var(--HRed);
     box-shadow: 0 4px 12px rgba(191, 13, 34, 0.4);
 }
+
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
 
@@ -278,7 +291,7 @@ nav button:hover {
 
 }
 
-/* FOOTER STYLES */
+/* FOOTER STYLES (nav arrow) */
 footer {
   position: fixed;
   left: 50%;

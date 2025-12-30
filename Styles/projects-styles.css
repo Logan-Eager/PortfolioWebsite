@@ -1,0 +1,6 @@
+@import url("StyleSheetImports/global-styles.css");
+
+/* HERO STYLES */
+.project-hero .header-1{
+    letter-spacing: 0.9vh;
+}
