@@ -15,9 +15,8 @@
 .title-hero {
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   text-align: center;
-  margin: 0;             
+  margin: 5rem 0 0 0;             
   padding: clamp(8rem, 15vh, 20rem) 2rem;
-  margin-top: 5rem;
 }
 
 /* ABOUT SECTION STYLES */
@@ -25,6 +24,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+a{
+  color: var(--HTeal);
+  font-style: italic;
 }
 
 .about .header-2{
@@ -43,6 +47,7 @@
 .typing-image {
     width: 300px;
     height: 300px;
+    border: 3px solid var(--HDarkGrey);
 }
 
 
@@ -63,7 +68,6 @@
   background: var(--HDarkGrey);
   padding: 2rem;
   border-radius: 8px;
-  border: 1px solid #4c0a0a;
   transition: transform 0.3s, box-shadow 0.3s;
   font-style: normal;
 }
@@ -85,17 +89,13 @@
   margin-bottom: 0px;
 }
 
+.contact a:hover{
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(-10px);
+}
+
 .contact .header-2 {
   margin-bottom: 0;
-}
-
-a{
-  color: var(--HTeal);
-  font-style: italic;
-}
-
-address{
-  display: flex;
 }
 
 .contact img{
@@ -110,15 +110,9 @@ address{
     margin-left: 0;
 }
 
-.icon-image:hover{
-    transform: scale(1.1);
-}
-
 .contact ul {
   display: flex;
   gap: 1rem;
-  align-items: center;
-  padding-left: 0;
   list-style: none;
   padding: 0;
 }
@@ -189,7 +183,7 @@ nav h1.drop-in {
 
 /* ICON ANIMATION */
 .contact .icon-image {
-  opacity: 0;
+  opacity: 0; /* default val, edited in script */
 }
 
 @keyframes bounce-up {
@@ -226,9 +220,9 @@ nav h1.drop-in {
     height: 200px;
   }
 
-    .typing-image {
-    width: 200px;
-    height: 200px;
+  .typing-image {
+      width: 200px;
+      height: 200px;
   }
 
   address{
