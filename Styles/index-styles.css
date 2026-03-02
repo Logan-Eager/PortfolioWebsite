@@ -50,39 +50,27 @@ a{
     border: 3px solid var(--HDarkGrey);
 }
 
+/* PROJECT SECTION STYLES */
 
-/* PROJECTS SECTION STYLES */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.project-button{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: var(--HDarkGrey);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-style: normal;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.project-grid a {
-  text-decoration: none;
-  text-align: center;
-  color: var(--Hwhite);
+.project-button:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.project-card {
-  background: var(--HDarkGrey);
-  padding: 2rem;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  font-style: normal;
-}
-
-.project-card img {
-  cursor: pointer;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 10px rgba(10, 10, 10, 0.2);
-}
-
 
 /* CONTACT SECTION STYLES */
+
 .contact {
   margin-top: 10rem;
   padding-bottom: 0rem;
@@ -248,6 +236,12 @@ nav h1.drop-in {
   td {
     font-size: calc(1rem + 0.25vw);
     padding: 0.25rem;
+  }
+
+  .project-grid {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
 }

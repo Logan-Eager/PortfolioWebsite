@@ -1,4 +1,5 @@
 /* CSS IMPORTS FILE FOR GLOBAL STYLES */ 
+@import url("./project-card-styles.css");
 
 /* Import fonts */ 
 /* Big ahh header font */ @import url('../../Assets/Fonts/BrandonGrotesque/brandon-grotesque.css');
@@ -15,6 +16,13 @@
   --HRed: #bf0d22;
   --HTeal: #7891ba;
   --HWhite: #f5f5f5;
+
+  /* Tag colours*/
+  --HCoral: #e76f51;
+  --HBlue: #5390d9;
+  --HYellow: #e9c46a;
+  --HGreen: #2a9d8f;
+  --HPurple: #833F7B;
 }
 
 /* PROJECT HERO STYLES */
@@ -217,7 +225,7 @@ nav a, button {
     background-color: rgba(15, 15, 15, 0.65);
 }
 
-.drop-down:hover .drop-down-content {
+.drop-down:focus-within .drop-down-content {
    display: flex; 
 }
 
@@ -248,7 +256,6 @@ nav button:hover {
 
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
-
 
   /* stacks header and list and other visual stuff */
   nav {
@@ -304,7 +311,7 @@ footer img {
   border: none;
   width: 60px;
   height: auto;
-  filter: invert(1); /* originally black png bit, hacky tbf */
+  filter: invert(1); /* originally black png, hacky tbf */
   box-shadow: none;
 }
 
