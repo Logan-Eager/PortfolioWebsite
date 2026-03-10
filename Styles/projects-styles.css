@@ -12,4 +12,9 @@
     main {
         padding-top: 7rem;
     }
+    .project-grid {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
 }
