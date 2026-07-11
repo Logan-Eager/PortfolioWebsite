@@ -19,7 +19,7 @@ nav {
 }
 
 nav h1 {
-  font-family: 'Montserrat-Black', sans-serif;
+  font-family: "Montserrat-Black", sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0.1rem;
   padding: 0rem 1rem;
@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav a, button {
-  font-family: 'SpaceGrotesk', sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
   font-size: clamp(1.3rem, 1.8vw, 2rem);
   font-style: normal;
   letter-spacing: 0.01rem;

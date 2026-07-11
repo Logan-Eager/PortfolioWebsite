@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Montserrat-Black';
-    src: url('/Assets/Fonts/Montserrat/Fonts/Montserrat-Black.ttf') format('truetype');
+    font-family: "Montserrat-Black";
+    src: url("/Assets/Fonts/Montserrat/Fonts/Montserrat-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
     font-display: swap;

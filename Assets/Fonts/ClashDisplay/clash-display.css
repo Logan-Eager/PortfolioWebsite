@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'ClashDisplay-Semibold';
-  src: url('/Assets/Fonts/ClashDisplay/Fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-       url('/Assets/Fonts/ClashDisplay/Fonts/ClashDisplay-Semibold.woff') format('woff');
+  font-family: "ClashDisplay-Semibold";
+  src: url("/Assets/Fonts/ClashDisplay/Fonts/ClashDisplay-Semibold.woff2") format("woff2"),
+       url("/Assets/Fonts/ClashDisplay/Fonts/ClashDisplay-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
