@@ -20,6 +20,11 @@
   --HRed: #bf0d22;
   --HTeal: #7891ba;
   --HWhite: #f5f5f5;
+  
+  /* Transparent Colours */
+  --HDarkGlass: rgba(15, 15, 15, 0.65);
+  --HShadow: rgba(0, 0, 0, 0.25);
+  --HRedGlow: rgba(180, 15, 35, 0.4);
 
   /* Tag Colours*/
   --HOrange: #e76f51;

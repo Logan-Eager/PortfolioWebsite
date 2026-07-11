@@ -39,7 +39,7 @@ img {
 
   border-radius: 8px;
   border: var(--HTeal) 2px solid;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px var(--HShadow);
 }
 
 video{
@@ -50,7 +50,7 @@ video{
 
   border-radius: 8px;
   border: var(--HTeal) 2px solid;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px var(--HShadow);
 }
 
 .header-1 {
@@ -82,7 +82,7 @@ video{
   line-height: 1.6;
   max-width: 70ch;
 
-  background-color: rgba(0, 0, 0, 0.582);
+  background-color: var(--HDarkGlass);
   border-radius: 8px;
   padding: 5px;
   
@@ -98,7 +98,7 @@ video{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--HDarkGlass);
     backdrop-filter: blur(1px);
     padding: 2rem;
     border-radius: 8px;

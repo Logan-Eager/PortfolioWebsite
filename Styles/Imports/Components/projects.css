@@ -72,7 +72,7 @@
 .project-card:hover {
     transition: transform 0.3s, box-shadow 0.3s;
     transform: translateY(-10px);
-    box-shadow: 0 10px 10px rgba(10, 10, 10, 0.2);
+    box-shadow: 0 10px 10px var(--HShadow);
 }
 
 /* TAGS */

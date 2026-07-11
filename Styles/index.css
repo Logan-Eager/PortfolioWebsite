@@ -55,7 +55,7 @@ a {
   text-decoration: none;
   border-radius: 4px;
   font-style: normal;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px var(--HShadow);
 }
 
 .project-button:hover {
@@ -120,25 +120,21 @@ nav h1.drop-in {
 
 @keyframes drop-thud {
   0% {
-    transform: translatey(-150%) scaley(1.05);
+    transform: translateY(-150%);
     opacity: 0;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 
   60% {
-    transform: translatey(12px) scaley(0.94);
+    transform: translateY(4%);
     opacity: 1;
-    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.22);
   }
 
   85% {
-    transform: translatey(-6px) scaley(1.03);
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2%);
   }
 
   100% {
-    transform: translatey(0) scaley(1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.10);
+    transform: translateY(0);
   }
 }
 
@@ -150,17 +146,17 @@ nav h1.drop-in {
 
 @keyframes bounce-up {
   0% {
-    transform: translatey(24px);
+    transform: translateY(24px);
     opacity: 0;
   }
 
   60% {
-    transform: translatey(-6px);
+    transform: translateY(-6px);
     opacity: 0.8;
   }
 
   100% {
-    transform: translatey(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
