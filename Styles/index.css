@@ -1,0 +1,227 @@
+/* MAIN PAGE STYLESHEET */
+
+/* Import global styles */
+@import url("/Styles/Imports/main.css");
+@import url("/Styles/Imports/projects.css");
+
+
+/* HERO SECTION STYLES */
+.title-hero {
+  background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
+  text-align: center;
+  margin: 5rem 0 0 0;
+  padding: clamp(8rem, 15vh, 20rem) 2rem;
+}
+
+/* ABOUT SECTION STYLES */
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+a {
+  color: var(--HTeal);
+  font-style: italic;
+}
+
+.about .header-2 {
+  margin-bottom: 0;
+}
+
+.headshot-img {
+  width: 280px;
+  height: 280px;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid var(--HDarkGrey);
+  object-fit: cover;
+}
+
+.typing-image {
+  width: 300px;
+  height: 300px;
+  border: 3px solid var(--HDarkGrey);
+}
+
+/* PROJECT SECTION STYLES */
+
+.project-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: var(--HDarkGrey);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-style: normal;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* CONTACT SECTION STYLES */
+
+.contact {
+  margin-top: 10rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0px;
+}
+
+.contact a:hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(-10px);
+}
+
+.contact .header-2 {
+  margin-bottom: 0;
+}
+
+.contact img {
+  cursor: pointer;
+}
+
+.icon-image {
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin-right: 2vh;
+  margin-left: 0;
+}
+
+.contact ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+
+/* SKILL SECTION STYLES */
+.skills-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.skills-container h3 {}
+
+/* NAV BAR THUD ANIMATION */
+
+nav h1 {
+  transform: translatey(-150%) scaley(1.05);
+}
+
+nav h1.drop-in {
+  animation: drop-thud 400ms cubic-bezier(1, .1, .1, 1) both;
+}
+
+@keyframes drop-thud {
+  0% {
+    transform: translatey(-150%) scaley(1.05);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  60% {
+    transform: translatey(12px) scaley(0.94);
+    opacity: 1;
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.22);
+  }
+
+  85% {
+    transform: translatey(-6px) scaley(1.03);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  100% {
+    transform: translatey(0) scaley(1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.10);
+  }
+}
+
+/* ICON ANIMATION */
+.contact .icon-image {
+  opacity: 0;
+  /* default val, edited in script */
+}
+
+@keyframes bounce-up {
+  0% {
+    transform: translatey(24px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translatey(-6px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+.contact.in-view .icon-image {
+  animation-name: bounce-up;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.22, .9, .3, 1);
+}
+
+.contact.in-view ul a:nth-child(1) .icon-image {
+  animation-delay: 0ms;
+}
+
+.contact.in-view ul a:nth-child(2) .icon-image {
+  animation-delay: 120ms;
+}
+
+.contact.in-view ul a:nth-child(3) .icon-image {
+  animation-delay: 240ms;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+
+  .title-hero {
+    margin: 1vh;
+    margin-top: 15vh;
+  }
+
+  .title-hero .header-1 {
+    letter-spacing: 1.5rem;
+    ;
+  }
+
+  .headshot-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .typing-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  address {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .icon-image {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+
+  .project-grid {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

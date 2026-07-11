@@ -1,0 +1,116 @@
+/* MAIN DEFINES ALL STYLES */
+@import url(/Styles/Imports/global.css);
+
+/* DISABLE BLINKING CURSOR */
+h1, h2, .header-1, .header-2, img{
+  cursor: default;
+  user-select: none;
+}
+
+main {
+  padding: 10vh;
+}
+
+section {
+  margin-bottom: 20vh;
+}
+
+body {
+  font-family: 'Satoshi-Regular', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  letter-spacing: 0.01rem;
+  color: var(--HWhite);
+
+  background-color: var(--HRed);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+q {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  box-sizing: border-box; 
+
+  border-radius: 8px;
+  border: var(--HTeal) 2px solid;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+video{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  box-sizing: border-box; 
+
+  border-radius: 8px;
+  border: var(--HTeal) 2px solid;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.header-1 {
+    /* TODO */
+    /* font-family: 'Montserrat-Black', sans-serif; */
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: clamp(4rem, 10vw, 9rem);
+    letter-spacing: clamp(0.5rem, 3vw, 2rem);
+    line-height: 1.1;
+}
+
+.header-2 {
+  font-family: 'ClashDisplay-Semibold', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  letter-spacing: 0.1rem;
+}
+
+.header-3 {
+  font-family: 'ClashDisplay-Semibold', sans-serif;
+  font-size: clamp(1.7rem, 2vw, 2.8rem);
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+}
+
+.content-1 {
+  font-family: 'Satoshi-Regular', sans-serif;
+  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  letter-spacing: 0.02rem;
+  line-height: 1.6;
+  max-width: 70ch;
+
+  background-color: rgba(0, 0, 0, 0.582);
+  border-radius: 8px;
+  padding: 5px;
+  
+  max-width: fit-content;
+}
+
+.highlight {
+  color: var(--HRed);
+}
+
+.project-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media (max-width: 768px){
+  main {
+    padding: 2vh;
+  }
+
+  img{
+    height: 200px;
+  }
+}

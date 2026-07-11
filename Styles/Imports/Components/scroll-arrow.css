@@ -1,0 +1,42 @@
+/* FOOTER STYLES (NAV ARROW) */
+footer {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 1;
+}
+
+footer img {
+  border: none;
+  width: 60px;
+  height: auto;
+  filter: invert(1); /* originally black png, hacky tbf */
+  box-shadow: none;
+}
+
+/* Animation styles, accessed by scroll-visual-aid.js */
+footer.fade-in {
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
+}
+
+footer.fade-out {
+  opacity: 1;
+  animation: fadeOut 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

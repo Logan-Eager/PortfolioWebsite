@@ -2,16 +2,18 @@
 <html lang="en">
   <!-- ===PROJECT TODO BACKLOG=== -->
   <!-- 
+  0. Refactor the sh** out of it
   1. Fill out projects that are not done yet (pack a snack, press any key to exist)
-  2. Add project tags to project cards (engine, solo/team, duration)
-  3. Create project system to easily add more projects, featured list then full list page
-    4. Add unreal project
-    5. Add embedded project
-  6. XP System?
   -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="/Styles/index.css" />
+    <script src="/Scripts/scroll-visual-aid.js" defer></script>
+    <script src="/Scripts/index-animations.js" defer></script>
+
     <!-- Site Icon -->
     <link
       rel="icon"
@@ -23,51 +25,6 @@
     <title>Logan Eager | Game Design Student Portfolio (Unity & Unreal)</title>
     <meta name="description" content="Logan Eager Game Design Portfolio: Unity and Unreal PC & VR projects like 
     Press Any Key To Exist. Student game dev showcasing immersive experiences. View demos & contact." />
-    
-    <!-- CSS Stylesheet link -->
-    <link rel="stylesheet" href="Styles/index-styles.css" />
-
-    <!-- Schema script for SEO -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Logan Eager",
-        "jobTitle": "Game Design Student & Developer",
-        "url": "https://loganeageruc.github.io/PortfolioWebsite/",
-        "image": "https://loganeageruc.github.io/PortfolioWebsite/Assets/headshot-of-logan.jpg",
-        "email": "loganallaneager@gmail.com",
-        "description": "Logan Eager Game Design Portfolio: Unity and Unreal PC & VR projects like Press Any Key To Exist. University of Canterbury student showcasing immersive experiences.",
-        "knowsAbout": ["Unity", "Unreal Engine", "VR Game Development", "Game Design"],
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "University of Canterbury"
-        },
-        "workLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Christchurch",
-            "addressCountry": "NZ"
-          }
-        },
-        "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Bachelor of Digital Screen with Honours (Current)",
-            "credentialCategory": "Enrollment",
-            "recognizedBy": {
-              "@type": "CollegeOrUniversity",
-              "name": "University of Canterbury"
-            },
-            "educationalLevel": "Undergraduate",
-            "dateCreated": "2024-02"
-          }
-        ]
-      }
-    </script>
-    <link rel="preload" href="Assets/web-portfolio-background.png" as="image" type="image/png">
-
   </head>
 
   <body>
@@ -98,7 +55,6 @@
     
     <!-- Hero Header-->
     <header id="home" class="title-hero">
-      <h1 class="hidden">Logan Eager - Game Design Student (Unity & VR)</h1>
       <h1 class="header-1">EAGER</h1>
       <q class="content-1">Showcasing my passion for creating immersive gaming experiences.</q>
     </header>
@@ -121,7 +77,7 @@
             <strong>Ka kite.</strong>
           </p>
           <img
-            src="Assets/logans-professional-headshot.webp"
+            src="/Assets/logan-headshot.webp"
             class="headshot-img"
             alt="Headshot of Logan Eager, Game Design Student at University of Canterbury"
             loading="lazy"
@@ -132,49 +88,31 @@
       <!-- SKILLS SECTION -->
        <section id="skills" class="skills">
         <header class="header-2">My Skills</header>
-        <div>
-          <table>
-            <tr>
-              <th class="header-4 left-column">Soft Skills</th>
-              <th class="header-4">Hard Skills</th>
-            </tr>
-
-            <tr>
-              <td class="left-column"><li>Creative Problem Solving</li></td>
-              <td><li>Unity</li></td>
-            </tr>
-
-            <tr>
-              <td class="left-column"><li>Time Management</li></td>
-              <td><li>Unreal Engine</li></td>
-            </tr>
-
-            <tr>
-              <td class="left-column"><li>Team Collaboration</li></td>
-              <td><li>C# & C++ Programming</li></td>
-            </tr>
-
-            <tr>
-              <td class="left-column"><li>Adaptability</li></td>
-              <td><li>Blueprint Visual Scripting</li></td>
-            </tr>
-
-            <tr>
-              <td class="left-column"><li>Communication</li></td>
-              <td><li>VR Development</li></td>
-            </tr>
-
-            <tr>
-              <td class="left-column"><li>Critical Thinking</li></td>
-              <td><li>Git / Version Control</li></td>
-            </tr>
-
-            <tr>
-              <td class="left-column"><li>Attention to Detail</li></td>
-              <td><li>Game Design Principles</li> </td>
-            </tr>
-
-          </table>
+        <div class="skills-container content-1">
+          <div>
+            <h3 class="header-3">Soft Skills</h3>
+            <ul>
+              <li>Creative Problem Solving</li>
+              <li>Time Management</li>
+              <li>Team Collaboration</li>
+              <li>Adaptability</li>
+              <li>Communication</li>
+              <li>Critical Thinking</li>
+              <li>Attention to Detail</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="header-3">Hard Skills</h3>
+            <ul>
+              <li>Unity</li>
+              <li>Unreal Engine</li>
+              <li>C# and C++</li>
+              <li>Blueprint Visual Scripting</li>
+              <li>VR Development</li>
+              <li>Git / Version Control</li>
+              <li>Game Design Principles</li>
+            </ul>
+          </div>
         </div>
        </section>
 
@@ -182,20 +120,9 @@
        <section id="projects" class="projects">
            <h2 class="header-2">Featured Projects</h2>
            <div class="project-grid">
-               <div class="project-card">
-                   <video src="Assets/GamePhotos/PressAnyKeyToExist/Videos/pakte-typing.mp4" alt="Press any key to exist VR gameplay video by Logan Eager" autoplay loop muted playsinline></video>
-                   <h3 class = "header-3">PRESS ANY KEY TO EXIST (W.I.P)</h3>
-                   <li>
-                       <span class="tag t-engine">Unity</span>
-                       <span class="tag t-time-span">4 Weeks</span>
-                       <span class="tag t-role">Solo</span>
-                       <span class="tag t-other">VR</span>
-                   </li>
-
-               </div>
-               <a href="projected-helmet-ui.html">
+               <a href="/projected-helmet-ui.html">
                    <div class="project-card">
-                       <video src="Assets/GamePhotos/ProjectedHelmetUI/Videos/UIProjectionCloseup.mp4" alt="Projected Helmet UI game gameplay video by Logan Eager" autoplay loop muted playsinline></video>
+                       <video src="/Assets/GamePhotos/ProjectedHelmetUI/Videos/UIProjectionCloseup.mp4" alt="Projected Helmet UI game gameplay video by Logan Eager" autoplay loop muted playsinline></video>
                        <h3 class = "header-3">Projected Helmet UI</h3>
                        <li>
                            <span class="tag t-engine">Unity</span>
@@ -205,9 +132,9 @@
                        </li>
                    </div>
                </a>
-               <a href="pack-a-snack.html">
+               <a href="/pack-a-snack.html">
                    <div class="project-card">
-                       <video src="Assets/GamePhotos/PackASnack/Videos/SandwhichScene.mp4" alt="Sandwhich Gameplay video by Logan Eager" autoplay loop muted playsinline></video>
+                       <video src="/Assets/GamePhotos/PackASnack/Videos/SandwhichScene.mp4" alt="Sandwhich Gameplay video by Logan Eager" autoplay loop muted playsinline></video>
                        <h3 class = "header-3">Pack a Snack</h3>
                        <li>
                            <span class="tag t-engine">Unity</span>
@@ -218,7 +145,7 @@
                    </div>
                </a>
            </div>
-           <a href="projects.html" class="project-button">All Projects🔗</a>
+           <a href="/projects.html" class="project-button">All Projects🔗</a>
        </section>
 
       <!-- CONTACT SECTION -->
@@ -226,15 +153,15 @@
         <h3 class="header-2">Contact Me</h3>
         <ul>
           <a href="mailto:loganallaneager@gmail.com">
-            <img src="Assets/email-icon.webp" alt="Email Icon" class="icon-image" loading="lazy">
+            <img src="/Assets/email-icon.webp" alt="Email Icon" class="icon-image" loading="lazy">
           </a>
 
           <a href="https://www.linkedin.com/in/logan-eager-967148257/">
-            <img src="Assets/linkedin-icon.webp" alt="Linkedin Icon" class="icon-image" loading="lazy">
+            <img src="/Assets/linkedin-icon.webp" alt="Linkedin Icon" class="icon-image" loading="lazy">
           </a>
 
           <a href="https://github.com/Logan-Eager">
-            <img src="Assets/github-logo.webp" alt="GitHub Icon" class="icon-image" loading="lazy">
+            <img src="/Assets/github-logo.webp" alt="GitHub Icon" class="icon-image" loading="lazy">
           </a>
 
         </ul>
@@ -245,40 +172,9 @@
 
     <!-- SCROLL VISUAL AID -->
     <footer>
-      <img src="Assets/down-arrow.webp" alt="Scroll Down arrow" />
+      <img src="/Assets/down-arrow.webp" alt="Scroll Down arrow" />
     </footer>
     
-    <script src="Scripts/scroll-visual-aid.js"></script>
 
-    <!-- nav drop-thud logic -->
-    <script>
-      window.addEventListener('DOMContentLoaded', function () {
-        const logo = document.querySelector('nav h1');
-        if (!logo) return;
-
-        setTimeout(() => logo.classList.add('drop-in'), 80);
-      });
-    </script>
-
-    <!-- contact icon bounce anim logic -->
-    <script>
-      (function () {
-        const contactSection = document.querySelector('#contact');
-
-        const io = new IntersectionObserver((entries, observer) => {
-
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('in-view');
-
-              observer.unobserve(entry.target); // run once
-            }
-
-          });
-        }, { threshold: 0.50 });
-
-        io.observe(contactSection);
-      })();
-    </script>
   </body>
 </html>

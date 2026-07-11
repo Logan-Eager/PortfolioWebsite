@@ -1,0 +1,14 @@
+@import url("/Styles/Imports/main.css");
+
+.project-hero{
+  /* placeholder image, replaced by video */
+  background: url(/Assets/GamePhotos/PressAnyKeyToExist/press-any-key-to-exist.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .project-hero .header-1{
+    letter-spacing: 5px;
+  }
+}

@@ -1,0 +1,8 @@
+@import url("/Styles/Imports/main.css");
+
+
+/* HERO */
+.project-hero {
+  /* placeholder image, replaced by video */
+  background: url("/Assets/GamePhotos/PackASnack/pack-a-snack.webp") center/cover;
+}

@@ -1,0 +1,17 @@
+@import url("/Styles/Imports/main.css");
+
+.header-2 {
+    margin-bottom: 0px;
+}
+    
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 7rem;
+    }
+    .project-grid {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
