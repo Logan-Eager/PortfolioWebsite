@@ -25,7 +25,7 @@ a {
   font-style: italic;
 }
 
-.about .header-2 {
+.about h2{
   margin-bottom: 0;
 }
 
@@ -53,7 +53,7 @@ a {
   background-color: var(--HDarkGrey);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 8px;
   font-style: normal;
   box-shadow: 0 4px 6px var(--HShadow);
 }
@@ -76,7 +76,7 @@ a {
   transform: translateY(-10px);
 }
 
-.contact .header-2 {
+.contact h2{
   margin-bottom: 0;
 }
 
@@ -188,7 +188,7 @@ nav h1.drop-in {
     margin-top: 15vh;
   }
 
-  .title-hero .header-1 {
+  .title-hero h1 {
     letter-spacing: 1.5rem;
     ;
   }

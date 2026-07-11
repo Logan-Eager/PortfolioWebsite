@@ -1,8 +1,8 @@
 /* MAIN DEFINES ALL STYLES */
 @import url(/Styles/Imports/global.css);
 
-/* DISABLE BLINKING CURSOR */
-h1, h2, .header-1, .header-2, img{
+/* Disables annoying pointer */
+h1, h2, img{
   cursor: default;
   user-select: none;
 }
@@ -16,15 +16,12 @@ section {
 }
 
 body {
-  font-family: "Satoshi-Regular", sans-serif;
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   line-height: 1.6;
   letter-spacing: 0.01rem;
   color: var(--HWhite);
 
   background-color: var(--HRed);
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 q {
@@ -42,7 +39,7 @@ img {
   box-shadow: 0 10px 30px var(--HShadow);
 }
 
-video{
+video {
   width: 100%;
   height: 350px;
   object-fit: cover;
@@ -53,26 +50,22 @@ video{
   box-shadow: 0 10px 30px var(--HShadow);
 }
 
-.header-1 {
-    /* TODO */
-    /* font-family: "Montserrat-Black", sans-serif; */
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: clamp(4rem, 10vw, 9rem);
+h1 {
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    font-size: clamp(3rem, 6vw, 9rem);
     letter-spacing: clamp(0.5rem, 3vw, 2rem);
-    line-height: 1.1;
 }
 
-.header-2 {
-  font-family: "ClashDisplay-Semibold", sans-serif;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+h2 {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: clamp(3rem, 4vw, 5rem);
   letter-spacing: 0.1rem;
 }
 
-.header-3 {
-  font-family: "ClashDisplay-Semibold", sans-serif;
-  font-size: clamp(1.7rem, 2vw, 2.8rem);
+h3 {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   letter-spacing: 0.1rem;
-  line-height: 1.3;
 }
 
 .content-1 {
@@ -83,10 +76,15 @@ video{
   max-width: 70ch;
 
   background-color: var(--HDarkGlass);
+  backdrop-filter: blur(10px);
   border-radius: 8px;
   padding: 5px;
   
   max-width: fit-content;
+}
+
+button, a {
+  font-family: "SpaceGrotesk-Medium", sans-serif;
 }
 
 .highlight {
@@ -99,7 +97,7 @@ video{
     grid-template-columns: auto auto auto;
     gap: 2rem;
     background-color: var(--HDarkGlass);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;

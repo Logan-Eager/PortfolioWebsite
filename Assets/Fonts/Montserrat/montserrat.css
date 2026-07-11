@@ -1,7 +1,14 @@
 @font-face {
-    font-family: "Montserrat-Black";
-    src: url("/Assets/Fonts/Montserrat/Fonts/Montserrat-Black.ttf") format("truetype");
-    font-weight: 900;
+    font-family: "Montserrat-SemiBold";
+    src: url("/Assets/Fonts/Montserrat/Fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url("/Assets/Fonts/Montserrat/Fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }

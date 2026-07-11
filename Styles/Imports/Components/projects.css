@@ -25,7 +25,7 @@
   z-index: -1;
 }
 
-.project-hero .header-1 {
+.project-hero h1{
   font-size: clamp(3rem, 8vw, 6rem);
   letter-spacing: 1.8rem;
   text-align: center;

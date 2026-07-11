@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  max-width: 90rem;
+  max-width: 80vw;
   margin: 0 auto;
   background: var(--HDarkGlass);
   backdrop-filter: blur(10px);
@@ -14,39 +14,35 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 200;
-  padding: 0.5rem 0;
+  z-index: 1;
 }
 
 nav h1 {
-  font-family: "Montserrat-Black", sans-serif;
-  font-size: clamp(2rem, 5vw, 3rem);
-  letter-spacing: 0.1rem;
-  padding: 0rem 1rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   margin: 0;
-  padding: 0;
+  letter-spacing: 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   margin-right: 5px;
 }
 
-nav a, button {
-  font-family: "SpaceGrotesk", sans-serif;
-  font-size: clamp(1.3rem, 1.8vw, 2rem);
-  font-style: normal;
-  letter-spacing: 0.01rem;
+nav a, nav button {
+  font-size: clamp(1rem, 2vw, 2rem);
   line-height: 1;
+  font-style: normal;
 
   color: var(--HWhite);
   text-decoration: none;
-  transition: color 0.3s;
-  padding: 0rem 0.9rem;
+  transition: color 0.25s;
+  padding: 0rem 1rem;
   background: none;
   border: none;
   
+  /* stops annoying highlight on click */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -63,6 +59,7 @@ nav a, button {
     min-width: 150px;
     padding: 0.5rem 0;
     background-color: var(--HDarkGlass);
+    backdrop-filter: blur(10px);
 }
 
 .drop-down:focus-within .drop-down-content {

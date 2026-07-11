@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "SpaceGrotesk-Bold";
-  src: url("/Assets/Fonts/SpaceGrotesk/Fonts/SpaceGrotesk-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
+  font-family: "SpaceGrotesk-Medium";
+  src: url("/Assets/Fonts/SpaceGrotesk/Fonts/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
   font-display: swap;
 }

@@ -19,7 +19,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  .project-hero .header-1{
+  .project-hero h1 {
     letter-spacing: 5px;
   }
 
