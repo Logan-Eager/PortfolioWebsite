@@ -10,7 +10,7 @@ img {
 
 /* RESPONSIVE STYLES */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .project-hero h1 {
     letter-spacing: 5px;
   }

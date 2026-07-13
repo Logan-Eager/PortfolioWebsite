@@ -2,7 +2,7 @@
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
     padding: 2rem;
 
@@ -38,7 +38,7 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .project-hero{
     margin: 1vh;
     margin-top: 10vh;
@@ -79,8 +79,9 @@
 /* TAGS */
 
 .tag {
+    display: inline-block;
     padding: 0.25rem 0.5rem;
-    margin: 0px 0.25rem;
+    margin: 3px 0.25rem;
     border-radius: var(--HLessRounded);
 }
 
