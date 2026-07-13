@@ -1,7 +1,7 @@
 @import url("/Styles/Imports/main.css");
 
 img {
-  max-width: 50%;
+  width: 25%;
   height: auto;
   display: flex;
   margin: 5px;
@@ -16,6 +16,6 @@ img {
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
   }
 }
