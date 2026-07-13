@@ -1,5 +1,17 @@
 /* PROJECTS CONTAINS STYLES PERTAINING TO A PROJECT, SUCH AS HEROS AND CARDS*/
 
+.project-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    padding: 2rem;
+
+    border-radius: var(--HRounded);
+    background-color: var(--HDarkGlass);
+    backdrop-filter: blur(10px);
+}
+
+
 /* PROJECT HERO STYLES */
 .project-hero {
   height: 60vh;
@@ -10,19 +22,14 @@
   align-items: center;
   justify-content: center;
 
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
 }
 
 .project-hero video {
   position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  z-index: -1;  /* so that text overlays the top */
 }
 
 .project-hero h1{
@@ -31,7 +38,7 @@
   text-align: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .project-hero{
     margin: 1vh;
     margin-top: 10vh;
@@ -43,45 +50,38 @@
 .project-card { 
     background-color: var(--HDarkGrey);
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: var(--HRounded);
     list-style: none;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align:center;
-    font-style: normal;
-}
-
-.project-card img{
-    width: 25vh;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-}
-
-.project-grid a {
-    text-decoration: none;
     text-align: center;
-    color: var(--HWhite);
+    transition: 0.5s ease;
 }
 
 .project-card img {
-    cursor: pointer;
+    width: 25vh;
+    height: auto;
+}
+
+.project-grid a {
+    color: var(--HWhite);
 }
 
 .project-card:hover {
-    transition: transform 0.3s, box-shadow 0.3s;
     transform: translateY(-10px);
-    box-shadow: 0 10px 10px var(--HShadow);
+    box-shadow: var(--HShadow);
+    transition: all 0.25s ease;
 }
 
+ 
 /* TAGS */
 
 .tag {
-    display: inline-block;
     padding: 0.25rem 0.5rem;
-    margin: 0.25rem;
-    border-radius: 4px;
+    margin: 0px 0.25rem;
+    border-radius: var(--HLessRounded);
 }
 
 .t-engine{

@@ -1,25 +1,23 @@
-/* FOOTER STYLES (NAV ARROW) */
 footer {
   position: fixed;
   left: 50%;
   bottom: 2rem;
-  transform: translateX(-50%);
   
   display: flex;
   justify-content: center;
   z-index: 1;
-  opacity: 1;
 }
 
 footer img {
   border: none;
   width: 60px;
   height: auto;
-  filter: invert(1); /* originally black png, hacky tbf */
+  filter: invert(1); /* originally black icon, admittedly a bit hacky...*/
   box-shadow: none;
 }
 
-/* Animation styles, accessed by scroll-visual-aid.js */
+
+/* ANIMATION STYLES, ACCESSED BY SCROLL-VISUAL-AID.JS */
 footer.fade-in {
   opacity: 0;
   animation: fadeIn 2.5s forwards;

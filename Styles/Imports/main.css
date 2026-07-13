@@ -1,12 +1,31 @@
 /* MAIN DEFINES ALL STYLES */
 @import url(/Styles/Imports/global.css);
 
-/* Disables annoying pointer */
+/* Class to put glass behind paragraphs etc */
+.content {
+  font-family: "Satoshi-Regular", sans-serif;
+  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+  max-width: fit-content;
+
+  background-color: var(--HDarkGlass);
+  backdrop-filter: blur(10px);
+  border-radius: var(--HRounded);
+  padding: 6px;
+}
+
+.content a {
+  color: var(--HTeal);
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* Disables pointer cursor where it shouldnt be */
 h1, h2, img{
   cursor: default;
   user-select: none;
 }
 
+/* MAIN STYLES */
 main {
   padding: 10vh;
 }
@@ -16,93 +35,51 @@ section {
 }
 
 body {
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  line-height: 1.6;
-  letter-spacing: 0.01rem;
   color: var(--HWhite);
-
-  background-color: var(--HRed);
+  background: linear-gradient(60deg, var(--HDarkGrey) 0%, var(--HRed) 100%);
 }
 
 q {
   font-style: italic;
 }
 
-img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  box-sizing: border-box; 
-
-  border-radius: 8px;
-  border: var(--HTeal) 2px solid;
-  box-shadow: 0 10px 30px var(--HShadow);
+a {
+  text-decoration: none;
+  color: var(--HWhite);
 }
 
-video {
-  width: 100%;
+img, video {
   height: 350px;
   object-fit: cover;
-  box-sizing: border-box; 
+  box-shadow: var(--HShadow);
 
-  border-radius: 8px;
+  box-sizing: border-box; 
+  border-radius: var(--HRounded);
   border: var(--HTeal) 2px solid;
-  box-shadow: 0 10px 30px var(--HShadow);
 }
 
+
+/* FONT STYLES */
 h1 {
     font-family: "Montserrat-ExtraBold", sans-serif;
-    font-size: clamp(3rem, 6vw, 9rem);
-    letter-spacing: clamp(0.5rem, 3vw, 2rem);
+    font-size: clamp(2rem, 5vw, 8rem);
 }
 
 h2 {
   font-family: "Montserrat-SemiBold", sans-serif;
-  font-size: clamp(3rem, 4vw, 5rem);
-  letter-spacing: 0.1rem;
+  font-size: clamp(2rem, 3vw, 4rem);
 }
 
 h3 {
   font-family: "Montserrat-SemiBold", sans-serif;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  letter-spacing: 0.1rem;
-}
-
-.content-1 {
-  font-family: "Satoshi-Regular", sans-serif;
-  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
-  letter-spacing: 0.02rem;
-  line-height: 1.6;
-  max-width: 70ch;
-
-  background-color: var(--HDarkGlass);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  padding: 5px;
-  
-  max-width: fit-content;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 button, a {
   font-family: "SpaceGrotesk-Medium", sans-serif;
 }
 
-.highlight {
-  color: var(--HRed);
-}
-
-.project-grid {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 2rem;
-    background-color: var(--HDarkGlass);
-    backdrop-filter: blur(10px);
-    padding: 2rem;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
+/* MAIN RESPONSIVE STYLES */
 @media (max-width: 768px){
   main {
     padding: 2vh;

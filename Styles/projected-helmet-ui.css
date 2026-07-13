@@ -1,11 +1,4 @@
-/* MAIN PAGE STYLESHEET */
-/* import global styles */
 @import url("/Styles/Imports/main.css");
-
-body {
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
 img {
   max-width: 50%;
@@ -14,9 +7,8 @@ img {
   margin: 5px;
 }
 
-a {
-  color: var(--HTeal);
-}
+
+/* RESPONSIVE STYLES */
 
 @media (max-width: 768px) {
   .project-hero h1 {

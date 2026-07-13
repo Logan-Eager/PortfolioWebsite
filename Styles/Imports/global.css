@@ -2,7 +2,6 @@
 
 /* Font Imports*/ 
 @import url("/Assets/Fonts/Montserrat/montserrat.css"); /* Title font */ 
-@import url("/Assets/Fonts/ClashDisplay/clash-display.css"); /* Header font */ 
 @import url("/Assets/Fonts/Satoshi/satoshi.css"); /* Body font */ 
 @import url("/Assets/Fonts/SpaceGrotesk/space-grotesk.css"); /* Interactor font */ 
 
@@ -11,7 +10,8 @@
 @import url("/Styles/Imports/Components/projects.css");
 @import url("/Styles/Imports/Components/scroll-arrow.css");
 
-/* Colour Palette (Colours prefixed with H to avoid naming clashes) */
+
+/* GLOBAL VARIABLES */
 :root {
   /* Site Colours */
   --HBlack: #000000;
@@ -23,7 +23,7 @@
   
   /* Transparent Colours */
   --HDarkGlass: rgba(15, 15, 15, 0.65);
-  --HShadow: rgba(0, 0, 0, 0.25);
+  --HCShadow: rgba(0, 0, 0, 0.25);
   --HRedGlow: rgba(180, 15, 35, 0.4);
 
   /* Tag Colours*/
@@ -32,4 +32,11 @@
   --HYellow: #e9c46a;
   --HGreen: #2a9d8f;
   --HPurple: #833F7B;
+
+  /* Border Radius's */
+  --HRounded: 8px;
+  --HLessRounded: 4px;
+
+  /* Shadow */
+  --HShadow: 10px 10px 8px var(--HCShadow);
 }

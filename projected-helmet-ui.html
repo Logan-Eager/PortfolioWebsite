@@ -2,104 +2,121 @@
 
 <html>
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Title & Description -->
-    <title>Projected Helmet UI | Logan Eager Game Design Portfolio</title>
-    <meta name="description" content="Projected Helmet UI: Solo Unity shader project by Logan Eager. HLSL raymarching for retro-futuristic VR helmet UI. University of Canterbury coursework.">
+  <!-- Title & Description -->
+  <title>Projected Helmet UI | Logan Eager Game Design Portfolio</title>
+  <meta name="description"
+    content="Projected Helmet UI: Solo Unity shader project by Logan Eager. HLSL raymarching for retro-futuristic VR helmet UI. University of Canterbury coursework.">
 
-    <!-- Site Icon -->
-    <link rel="icon" href="/controller-page-icon.ico" />
+  <!-- Site Icon -->
+  <link rel="icon" href="/controller-page-icon.ico" />
 
-    <!-- Stylesheet CSS link -->
-    <link rel="stylesheet" href="/Styles/projected-helmet-ui.css" />
+  <!-- Stylesheet CSS link -->
+  <link rel="stylesheet" href="/Styles/projected-helmet-ui.css" />
+</head>
 
-  </head>
 
-  <body>
-    
-    <!-- Navigation Bar -->
-    <nav>
-      <h1>LOGAN EAGER <span class="highlight">G.D</span></h1>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-      </ul>
-    </nav>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <h1>LOGAN EAGER <span class="highlight">G.D</span></h1>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+    </ul>
+  </nav>
 
-    <!-- Hero Section -->
-    <header class="project-hero">
-      <video autoplay muted loop playsinline poster="Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.webp">
-        <source src="/Assets/GamePhotos/ProjectedHelmetUI/Videos/UIProjectionWideshot.mp4" type="video/mp4">
-      </video>
-      <h1 >PROJECTED HELMET <span class="highlight">U.I</span></h1>
-    </header>
-    
-    <main>
-      
-      <!-- Overview Section -->
-      <section>
-        <h1 >Overview</h1>
+  <!-- Hero Section -->
+  <header class="project-hero">
+    <video autoplay muted loop playsinline poster="Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.webp">
+      <source src="/Assets/GamePhotos/ProjectedHelmetUI/Videos/UIProjectionWideshot.mp4" type="video/mp4">
+    </video>
+    <h1>PROJECTED HELMET <span class="highlight">U.I</span></h1>
+  </header>
 
-        <p class="content-1">This project was created using the <strong>Unity</strong> game engine. It was primarily written in <strong>HLSL</strong> and <strong>C#</strong>, utilising unitys <strong>URP</strong> and <strong>ShaderLabs</strong> API.<br>
-          The project was primarily research based and I hit many knowledge blocks, most notably: Matrix transformations, Projection math and 
-          other cornerstones of computer graphics like vertex and fragment mapping. Albeit, a great learning experience.
-        </p>
 
-        <img src="/Assets/GamePhotos/ProjectedHelmetUI/UERaymarching.webp" alt="Unreal Engine Raymarching Visualisation"
+  <main>
+    <!-- Overview Section -->
+    <section>
+      <h1>Overview</h1>
+      <p class="content">This project was created using the <strong>Unity</strong> game engine. It was primarily written
+        in <strong>HLSL</strong> and <strong>C#</strong>, utilising unitys <strong>URP</strong> and
+        <strong>ShaderLabs</strong> API.<br>
+        The project was primarily research based and I hit many knowledge blocks, most notably: Matrix transformations,
+        Projection math and
+        other cornerstones of computer graphics like vertex and fragment mapping. Albeit, a great learning experience.
+      </p>
+
+      <img src="/Assets/GamePhotos/ProjectedHelmetUI/UERaymarching.webp" alt="Unreal Engine Raymarching Visualisation"
         loading="lazy" width="800" height="450">
-      </section>
+    </section>
 
-      <!-- Purpose Section -->
-      <section>
-        <h1 >Purpose</h1>
-        
-        <p class="content-1"> I wanted to create a shader which could take a 2D render texture and translate it from the camera onto a concave mesh (as a projector would).<br>
-          After watching and completing a <a href="https://www.youtube.com/watch?v=EjCPr-bxI34">tutorial by RenderBucket</a> for shaders and raymarching. I became fascinated with <strong>shaders</strong> and had found an outlet
-          for a retro UI projector, which I had been wanting to do for a long time. I wanted a retro-futuristic feel with an immersive touch for <strong>virtual-reality</strong> based games.
-        </p>
-        
-        <img src="/Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.webp" alt="Projected Helmet UI in Space Environment"
+    <!-- Purpose Section -->
+    <section>
+      <h1>Purpose</h1>
+      <p class="content"> I wanted to create a shader which could take a 2D render texture and translate it from the
+        camera onto a concave mesh (as a projector would).<br>
+        After watching and completing a <a href="https://www.youtube.com/watch?v=EjCPr-bxI34">tutorial by
+          RenderBucket</a> for shaders and raymarching. I became fascinated with <strong>shaders</strong> and had found
+        an outlet
+        for a retro UI projector, which I had been wanting to do for a long time. I wanted a retro-futuristic feel with
+        an immersive touch for <strong>virtual-reality</strong> based games.
+      </p>
+
+      <img src="/Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.webp"
+        alt="Projected Helmet UI in Space Environment" loading="lazy" width="800" height="450">
+
+    </section>
+
+    <!-- Process Section -->
+    <section>
+      <h1>Process</h1>
+      <p class="content">I built this project partly during one of my <strong>game computation</strong> university
+        courses, however, after biting off more than I could chew,
+        it quickly became a passion project.<br>
+        I spent most of my time in old Unity forums and <strong>Visual Studio Code</strong>, just trying to get the
+        design from my head onto the screen. A small roadblock during development was getting a <i>reactive</i> 2D UI
+        into the projector.<br>
+        I ended up solving this by using a 2D render texture, (a common solution for reactive UIs in Unity).
+      </p>
+
+      <img src="/Assets/GamePhotos/ProjectedHelmetUI/render-texture-gen.webp" alt="Render Texture Generator"
         loading="lazy" width="800" height="450">
-      </section>
 
-      <!-- Process Section -->
-      <section>
-        <h1 >Process</h1>
-        
-        <p class="content-1">I built this project partly during one of my <strong>game computation</strong> university courses, however, after biting off more than I could chew,
-          it quickly became a passion project.<br>
-          I spent most of my time in old Unity forums and <strong>Visual Studio Code</strong>, just trying to get the
-          design from my head onto the screen. A small roadblock during development was getting a <i>reactive</i> 2D UI into the projector.<br>
-          I ended up solving this by using a 2D render texture, (a common solution for reactive UIs in Unity).
-        </p>
-        <img src="/Assets/GamePhotos/ProjectedHelmetUI/render-texture-gen.webp" alt="Render Texture Generator"
-        loading="lazy" width="800" height="450">
-      </section>
+    </section>
 
-      <!-- Product Section -->
-      <section>
-        <h1 >Product</h1>
+    <!-- Product Section -->
+    <section>
+      <h1>Product</h1>
+      <p class="content">The most difficult problem in this project byfar was writing the shader. Here is an explanation
+        of the general pipeline I designed; the players data is handled using <strong>Scriptable Objects</strong>
+        this is put into the <strong>2D Render Texture</strong> which is then passed into the shader. In another area
+        --- a script sends all the
+        relevant matrices such as the <strong>Model, View and Projection matrices</strong> from the "Projector Camera"
+        game object, into the shader. The shader than samples the 2D render texture
+        and uses the transformation matrices to take data from the 2D render texture and map it onto the target game
+        objects mesh. It is also <i>distorted</i> by a colour and position sin wave animation for aesthetics.<br>
+        The final product is a 2D texture projected onto a concave mesh.<br>
+        For further information, check out the repo here:
+        <a href="https://eng-git.canterbury.ac.nz/SoPD/prod-224_22s1/2025/lea46/comp-shader-proj.git">Project Git
+          Repository</a>.
+      </p>
 
-        <p class="content-1">The most difficult problem in this project byfar was writing the shader. Here is an explanation of the general pipeline I designed; the players data is handled using <strong>Scriptable Objects</strong>
-          this is put into the <strong>2D Render Texture</strong> which is then passed into the shader. In another area --- a script sends all the 
-          relevant matrices such as the <strong>Model, View and Projection matrices</strong> from the "Projector Camera" game object, into the shader. The shader than samples the 2D render texture 
-          and uses the transformation matrices to take data from the 2D render texture and map it onto the target game objects mesh. It is also <i>distorted</i> by a colour and position sin wave animation for aesthetics.<br>
-          The final product is a 2D texture projected onto a concave mesh.<br>
-          For further information, check out the repo here:
-          <a href="https://eng-git.canterbury.ac.nz/SoPD/prod-224_22s1/2025/lea46/comp-shader-proj.git">Project Git Repository</a>.
-        </p>
-        <img src="/Assets/GamePhotos/ProjectedHelmetUI/name-health-in-helmet.webp" alt="Name and Health Demo for Shader"
-        loading="lazy", width="800", height="450">
-      </section>
-      
-      <!-- Visual scroll arrow -->
-      <footer>
-        <img src="/Assets/down-arrow.webp" alt="Scroll Down Arrow" />
-      </footer>
-      <script src="/Scripts/scroll-visual-aid.js"></script>
-    </main>
-  </body>
+      <img src="/Assets/GamePhotos/ProjectedHelmetUI/name-health-in-helmet.webp" alt="Name and Health Demo for Shader"
+        loading="lazy" , width="800" , height="450">
+
+    </section>
+
+  </main>
+
+
+  <!-- Visual scroll arrow -->
+  <footer>
+    <img src="/Assets/down-arrow.webp" alt="Scroll Down Arrow" />
+  </footer>
+  <script src="/Scripts/scroll-visual-aid.js"></script>
+</body>
 </html>

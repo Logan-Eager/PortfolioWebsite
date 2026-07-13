@@ -1,9 +1,6 @@
 @import url("/Styles/Imports/main.css");
-
-h2 {
-    margin-bottom: 0px;
-}
     
+/* RESPONSIVE STYLES */
 
 @media (max-width: 768px) {
     main {
