@@ -3,15 +3,16 @@
 /* TODO: fix cls of index page */
 
 /* ABOUT SECTION STYLES */
-.about h2{
-  margin-bottom: 0px;
-}
 
 .headshot-img {
   width: 280px;
   height: 280px;
   border-radius: 50%;
   border: 3px solid var(--HDarkGrey);
+}
+
+.about h2{
+  margin-bottom: 0px;
 }
 
 
@@ -75,13 +76,12 @@
 
 
 /* NAV BAR THUD ANIMATION */
+nav h1.drop-in {
+  animation: drop-thud 400ms cubic-bezier(1, .1, .1, 1) both;
+}
 
 nav h1 {
   transform: translatey(-150%) scaley(1.05);
-}
-
-nav h1.drop-in {
-  animation: drop-thud 400ms cubic-bezier(1, .1, .1, 1) both;
 }
 
 @keyframes drop-thud {
@@ -110,23 +110,6 @@ nav h1.drop-in {
   /* default val, edited in script */
 }
 
-@keyframes bounce-up {
-  0% {
-    transform: translateY(24px);
-    opacity: 0;
-  }
-
-  60% {
-    transform: translateY(-6px);
-    opacity: 0.8;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
 .contact.in-view .icon-image {
   animation-name: bounce-up;
   animation-duration: 1000ms;
@@ -144,6 +127,23 @@ nav h1.drop-in {
 
 .contact.in-view ul a:nth-child(3) .icon-image {
   animation-delay: 240ms;
+}
+
+@keyframes bounce-up {
+  0% {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(-6px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 
@@ -171,12 +171,6 @@ nav h1.drop-in {
     height: 200px;
   }
 
-  address {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-  }
-
   .icon-image {
     width: 80px;
     height: 80px;
@@ -187,5 +181,11 @@ nav h1.drop-in {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+  }
+
+  address {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
   }
 }

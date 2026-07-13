@@ -1,3 +1,42 @@
+.highlight {
+  color: var(--HRed);
+}
+
+/* DROP DOWN STYLES */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  /* TODO: make dropdown fade downwards */
+  /* TODO: make centered out properly */
+
+  position: absolute;
+  flex-direction: column;
+  padding: 1rem 0px;
+
+  background-color: var(--HDarkGlass);
+  backdrop-filter: blur(10px);
+  border-radius: var(--HLessRounded);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  border-bottom: 1px solid var(--HDarkGrey);
+}
+
+.dropdown-content li:last-child {
+  border-bottom: none
+}
+
+.dropdown-content a {
+  font-size: clamp(1.5rem, 1vw, 2rem);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -42,43 +81,4 @@ nav a, nav button {
 
 nav a:hover, nav button:hover {
   color: var(--HRed);
-}
-
-.highlight {
-  color: var(--HRed);
-}
-
-/* DROP DOWN STYLES */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  /* TODO: make dropdown fade downwards */
-  /* TODO: make centered out properly */
-
-  position: absolute;
-  flex-direction: column;
-  padding: 1rem 0px;
-
-  background-color: var(--HDarkGlass);
-  backdrop-filter: blur(10px);
-  border-radius: var(--HLessRounded);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content li {
-  border-bottom: 1px solid var(--HDarkGrey);
-}
-
-.dropdown-content li:last-child {
-  border-bottom: none
-}
-
-.dropdown-content a {
-  font-size: clamp(1.5rem, 1vw, 2rem);
 }

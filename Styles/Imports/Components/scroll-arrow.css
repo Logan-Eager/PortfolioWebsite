@@ -1,22 +1,3 @@
-footer {
-  position: fixed;
-  left: 50%;
-  bottom: 2rem;
-  
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-
-footer img {
-  border: none;
-  width: 60px;
-  height: auto;
-  filter: invert(1); /* originally black icon, admittedly a bit hacky...*/
-  box-shadow: none;
-}
-
-
 /* ANIMATION STYLES, ACCESSED BY SCROLL-VISUAL-AID.JS */
 footer.fade-in {
   opacity: 0;
@@ -37,4 +18,22 @@ footer.fade-out {
   to {
     opacity: 1;
   }
+}
+
+footer {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+footer img {
+  border: none;
+  width: 60px;
+  height: auto;
+  filter: invert(1); /* originally black icon, admittedly a bit hacky...*/
+  box-shadow: none;
 }

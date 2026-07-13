@@ -1,14 +1,14 @@
 @import url("/Styles/Imports/main.css");
     
 /* RESPONSIVE STYLES */
-
 @media (max-width: 768px) {
-    main {
-        padding-top: 7rem;
-    }
     .project-grid {
         padding: 2rem;
         display: flex;
         flex-direction: column;
+    }
+
+    main {
+        padding-top: 7rem;
     }
 }

@@ -2,7 +2,7 @@
 
 .project-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
 
