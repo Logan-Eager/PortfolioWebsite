@@ -1,5 +1,5 @@
 /* MAIN DEFINES ALL STYLES */
-@import url(/Styles/Imports/global.css);
+@import url(Styles/Imports/global.css);
 
 /* Class to put glass behind paragraphs etc */
 .content {
