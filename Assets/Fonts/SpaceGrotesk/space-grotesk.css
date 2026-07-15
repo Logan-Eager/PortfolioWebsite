@@ -1,6 +1,6 @@
 @font-face {
   font-family: "SpaceGrotesk-Medium";
-  src: url("Assets/Fonts/SpaceGrotesk/Fonts/SpaceGrotesk-Medium.ttf") format("truetype");
+  src: url("./Fonts/SpaceGrotesk-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;

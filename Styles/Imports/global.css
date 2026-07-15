@@ -1,14 +1,14 @@
 /* GLOBAL DEFINES COMMON VARIABLES */
 
 /* Font Imports*/ 
-@import url("Assets/Fonts/Montserrat/montserrat.css"); /* Title font */ 
-@import url("Assets/Fonts/Satoshi/satoshi.css"); /* Body font */ 
-@import url("Assets/Fonts/SpaceGrotesk/space-grotesk.css"); /* Interactor font */ 
+@import url("../../Assets/Fonts/Montserrat/montserrat.css"); /* Title font */ 
+@import url("../../Assets/Fonts/Satoshi/satoshi.css"); /* Body font */ 
+@import url("../../Assets/Fonts/SpaceGrotesk/space-grotesk.css"); /* Interactor font */ 
 
 /* Style Imports */
-@import url("Styles/Imports/Components/nav-bar.css");
-@import url("Styles/Imports/Components/projects.css");
-@import url("Styles/Imports/Components/scroll-arrow.css");
+@import url("./Components/nav-bar.css");
+@import url("./Components/projects.css");
+@import url("./Components/scroll-arrow.css");
 
 
 /* GLOBAL VARIABLES */
