@@ -20,24 +20,11 @@
   display: flex;
 }
 
-
-/* PROJECT SECTION STYLES */
+/* PROJECT SECTION */
 .project-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  font-size: 25px;
-  background-color: var(--HDarkGrey);
-  border-radius: var(--HRounded);
-  box-shadow: var(--HShadow);
+  align-items: flex-start;
+  margin: 10px 0;
 }
-
-.project-button:hover {
-  transform: translateY(-3px);
-  transition: all 0.25s;
-  color: var(--HRed);
-}
-
 
 /* CONTACT SECTION STYLES */
 .contact {
@@ -117,15 +104,15 @@ nav h1 {
   animation-timing-function: cubic-bezier(.22, .9, .3, 1);
 }
 
-.contact.in-view ul a:nth-child(1) .icon-image {
+.contact.in-view div a:nth-child(1) .icon-image {
   animation-delay: 0ms;
 }
 
-.contact.in-view ul a:nth-child(2) .icon-image {
+.contact.in-view div a:nth-child(2) .icon-image {
   animation-delay: 120ms;
 }
 
-.contact.in-view ul a:nth-child(3) .icon-image {
+.contact.in-view div a:nth-child(3) .icon-image {
   animation-delay: 240ms;
 }
 

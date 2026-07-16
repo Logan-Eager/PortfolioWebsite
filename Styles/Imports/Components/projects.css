@@ -75,6 +75,27 @@
     transition: all 0.25s ease;
 }
 
+/* PROJECT BUTTON (takes to all projects)*/
+.project-button {
+    font-size: clamp(1rem, 4vw, 2rem);
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: var(--HDarkGrey);
+  border-radius: var(--HRounded);
+  box-shadow: var(--HShadow);
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+  transition: all 0.25s;
+  color: var(--HRed);
+}
+
+
  
 /* TAGS */
 

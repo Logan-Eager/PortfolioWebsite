@@ -90,4 +90,8 @@ button, a {
   img{
     height: 200px;
   }
+
+  nav ul{
+    padding-left: 0;
+  }
 }
